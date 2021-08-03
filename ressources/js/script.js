@@ -3,10 +3,10 @@ import imagemin from 'imagemin';
 import imageminPngquant from 'imagemin-pngquant';
 
 (async () => {
-    await imagemin(['images/*.png'], {
+    await imagemin(['ressources/images/*.png'], {
         destination: 'build/images',
         plugins: [
-            imageminPngquant()
+            imageminPngquant({ quality: [0, 0.05] })
         ]
     });
 
