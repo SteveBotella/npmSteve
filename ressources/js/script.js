@@ -1,5 +1,6 @@
-const imagemin = require('imagemin');
-const imageminPngquant = require('imagemin-pngquant');
+import imagemin from 'imagemin';
+//import imageminJpegtran from 'imagemin-jpegtran';
+import imageminPngquant from 'imagemin-pngquant';
 
 (async () => {
     await imagemin(['images/*.png'], {

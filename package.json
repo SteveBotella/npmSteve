@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "script": "node script.js"
+    "script": "node ressources/js/script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "imagemin": "^8.0.0",
     "imagemin-pngquant": "^9.0.2"
